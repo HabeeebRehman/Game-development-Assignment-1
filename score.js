@@ -1,0 +1,11 @@
+// Iteration 5: Store the player score and display it on the game over screen
+const palyAgainBtn = document.getElementById("play-again-button");
+
+const scoreBoard =document.getElementById("score-board")
+
+let score = localStorage.getItem("score")
+scoreBoard.innerText = score;
+
+palyAgainBtn.onclick = () =>{
+    window.location.href ="./game.html";
+};
